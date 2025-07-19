@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('snackshacklabel.png') no-repeat center center fixed;
+      background: url('snackshacklabel2.png') no-repeat center center fixed;
       background-size: cover;
       color: #fefae0;
       display: flex;
@@ -69,7 +69,7 @@
 </head>
 <body>
 
-  <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack cookie logo" class="logo" />
+  <img src="cdsnackshacklogo2.png" alt="CDawgs Snack Shack cookie logo" class="logo" />
   <h1>CDawgs Snack Shack</h1>
   <p class="tagline">Cookies, Cowboy Candy & Island Vibes 🌴🍪🔥</p>
 

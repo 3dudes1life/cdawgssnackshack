@@ -21,29 +21,43 @@
       position: relative;
     }
 
-    /* 🧭 Top nav bar */
-    nav {
+    /* 🧭 Thicker top nav bar */
+    header {
       width: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 12px 20px;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      padding: 14px 30px;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 10;
       display: flex;
-      justify-content: flex-end;
-      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff22;
     }
 
-    nav a {
+    .header-logo {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
       color: #fefae0;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 0.95em;
-      transition: color 0.2s ease;
+      font-weight: 600;
+      font-size: 1.1em;
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: #ffffff;
       text-shadow: 1px 1px 3px #00000088;
     }
@@ -72,7 +86,7 @@
     .content {
       z-index: 1;
       max-width: 800px;
-      margin: 100px auto 40px;
+      margin: 140px auto 40px;
       text-align: center;
       padding: 0 20px;
       position: relative;
@@ -116,16 +130,23 @@
     }
 
     @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 16px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
       .palms-left,
       .palms-right {
         width: 60%;
         opacity: 0.15;
-      }
-
-      nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
       }
 
       h1 {
@@ -140,17 +161,22 @@
 </head>
 <body>
 
-  <!-- 🌐 Top Nav -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="http://instagram.com/cdawgs_snackshack/" target="_blank">Instagram</a>
-  </nav>
+  <!-- 🧭 Beefy header with logo -->
+  <header>
+    <a href="/">
+      <img src="cdsnackshacklogo2.png" alt="C-Dawg's Snack Shack logo" class="header-logo" />
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="http://instagram.com/cdawgs_snackshack/" target="_blank">Instagram</a>
+    </div>
+  </header>
 
-  <!-- 🌴 Palm Silhouettes -->
+  <!-- 🌴 Palms -->
   <img src="PalmSilhouttes.png" alt="Palm left" class="palms-left" />
   <img src="PalmSilhouttes.png" alt="Palm right" class="palms-right" />
 
-  <!-- 🍪 Content -->
+  <!-- 🍪 Main content -->
   <div class="content">
     <img src="cdsnackshacklogo2.png" alt="C-Dawg's Snack Shack cookie logo" class="logo" />
     <h1>C-Dawg's Snack Shack</h1>

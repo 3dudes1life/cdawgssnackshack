@@ -22,7 +22,7 @@
       align-items: center;
       text-align: center;
       min-height: 100vh;
-      padding: 30px 20px;
+      padding: 30px 20px 60px;
     }
 
     .logo {
@@ -67,12 +67,12 @@
 </head>
 <body>
 
-  <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack Logo" class="logo" />
+  <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack cookie logo" class="logo" />
   <h1>CDawgs Snack Shack</h1>
   <p class="tagline">Cookies, Cowboy Candy & Island Vibes 🌴🍪🔥</p>
 
   <footer>
-    &copy; 2025 CDawgs Snack Shack. All rights reserved - OutAt INC.
+    &copy; 2025 CDawgs Snack Shack. All rights reserved – OutAt INC.
   </footer>
 
 </body>

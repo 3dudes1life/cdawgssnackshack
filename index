@@ -15,12 +15,20 @@
     }
 
     header {
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
       background: white;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       padding: 40px 20px;
+    }
+
+    img.logo {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 0 auto 30px;
     }
 
     h1 {
@@ -60,8 +68,7 @@
 <body>
 
   <header>
-    <!-- Optional logo image -->
-    <!-- <img src="logo.png" alt="CDawgs Snack Shack Logo" style="width:150px; margin-bottom: 20px;" /> -->
+    <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack Logo" class="logo" />
     <h1>CDawgs Snack Shack</h1>
     <p>Homemade cookies, cowboy candy, and island vibes 🌴🍪🔥</p>
     <p class="tagline">Serving sunshine and sugar — one snack at a time</p>

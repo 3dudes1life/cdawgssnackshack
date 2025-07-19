@@ -5,65 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CDawgs Snack Shack</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: url('SnackShackLabel.PNG') no-repeat center center fixed;
       background-size: cover;
-      color: #143e3c;
+      color: #fefae0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
-    }
-
-    .card {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 40px 20px;
-      border-radius: 24px;
-      max-width: 800px;
-      width: 90%;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+      min-height: 100vh;
+      padding: 30px 20px;
     }
 
     .logo {
-      width: 100%;
-      max-width: 400px;
+      width: 90%;
+      max-width: 500px;
       height: auto;
       margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2.8em;
-      margin: 0 0 10px;
-      color: #24554e;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 0;
-      color: #374b47;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: #fefae0;
+      text-shadow: 1px 1px 2px #00000055;
     }
 
     .tagline {
+      font-size: 1.2em;
       font-style: italic;
-      color: #446963;
-      margin-top: 10px;
+      color: #fefae0cc;
+      text-shadow: 1px 1px 2px #00000055;
     }
 
     footer {
       margin-top: 50px;
       font-size: 0.85em;
-      color: #4b625f;
+      color: #fefae099;
+      text-shadow: 1px 1px 2px #00000055;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 2em;
       }
-      p {
+
+      .tagline {
         font-size: 1em;
       }
     }
@@ -71,16 +67,13 @@
 </head>
 <body>
 
-  <div class="card">
-    <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack Logo" class="logo" />
-    <h1>CDawgs Snack Shack</h1>
-    <p>Homemade cookies, cowboy candy, and island vibes 🌴🍪🔥</p>
-    <p class="tagline">Serving sunshine and sugar — one snack at a time</p>
-    <footer>
-      &copy; 2025 CDawgs Snack Shack. All rights reserved.
-    </footer>
-  </div>
+  <img src="CDSnackShackLogo.png" alt="CDawgs Snack Shack Logo" class="logo" />
+  <h1>CDawgs Snack Shack</h1>
+  <p class="tagline">Cookies, Cowboy Candy & Island Vibes 🌴🍪🔥</p>
+
+  <footer>
+    &copy; 2025 CDawgs Snack Shack. All rights reserved.
+  </footer>
 
 </body>
 </html>
-

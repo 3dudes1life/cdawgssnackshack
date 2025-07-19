@@ -16,24 +16,46 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom, #94cfc6 0%, #3b706c 100%);
       color: #fefae0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       min-height: 100vh;
-      padding: 30px 20px 60px;
+      overflow-x: hidden;
       position: relative;
-      overflow: hidden;
+    }
+
+    /* 🧭 Top nav bar */
+    nav {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 12px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fefae0;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 1px 1px 3px #00000088;
     }
 
     .palms-left,
     .palms-right {
       position: absolute;
       bottom: 0;
-      width: 30%;
-      max-width: 300px;
+      width: 35%;
+      max-width: 500px;
       height: auto;
-      opacity: 0.1;
+      opacity: 0.14;
       z-index: 0;
       pointer-events: none;
     }
@@ -44,12 +66,16 @@
 
     .palms-right {
       right: -20px;
-      transform: scaleX(-1); /* mirror image */
+      transform: scaleX(-1);
     }
 
     .content {
       z-index: 1;
       max-width: 800px;
+      margin: 100px auto 40px;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
     }
 
     .logo {
@@ -57,6 +83,15 @@
       max-width: 500px;
       height: auto;
       margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeIn 1.6s ease-in-out forwards;
+      filter: drop-shadow(0 0 12px #ffffffcc);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
 
     h1 {
@@ -83,8 +118,14 @@
     @media (max-width: 768px) {
       .palms-left,
       .palms-right {
-        width: 45%;
-        opacity: 0.12;
+        width: 60%;
+        opacity: 0.15;
+      }
+
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
       }
 
       h1 {
@@ -99,13 +140,22 @@
 </head>
 <body>
 
+  <!-- 🌐 Top Nav -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="http://instagram.com/cdawgs_snackshack/" target="_blank">Instagram</a>
+  </nav>
+
+  <!-- 🌴 Palm Silhouettes -->
   <img src="PalmSilhouttes.png" alt="Palm left" class="palms-left" />
   <img src="PalmSilhouttes.png" alt="Palm right" class="palms-right" />
 
+  <!-- 🍪 Content -->
   <div class="content">
     <img src="cdsnackshacklogo2.png" alt="CDawgs Snack Shack cookie logo" class="logo" />
     <h1>CDawgs Snack Shack</h1>
     <p class="tagline">Cookies, Cowboy Candy & Island Vibes 🌴🍪🔥</p>
+
     <footer>
       &copy; 2025 CDawgs Snack Shack. All rights reserved – OutAt INC.
     </footer>

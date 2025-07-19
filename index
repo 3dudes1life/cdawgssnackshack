@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('SnackShackLabel.png') no-repeat center center fixed;
+      background: url('snackshacklabel.png') no-repeat center center fixed;
       background-size: cover;
       color: #fefae0;
       display: flex;

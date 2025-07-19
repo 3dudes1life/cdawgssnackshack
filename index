@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CDawgs Snack Shack</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fceabb, #f8b500);
+      color: #2f2f2f;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 0 0 10px;
+      color: #d94f04;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to CDawgs Snack Shack!</h1>
-  <p>Homemade cookies, cowboy candy, and good vibes — made in California with aloha spirit.</p>
+
+  <header>
+    <!-- Optional logo image -->
+    <!-- <img src="logo.png" alt="CDawgs Snack Shack Logo" style="width:150px; margin-bottom: 20px;" /> -->
+    <h1>CDawgs Snack Shack</h1>
+    <p>Homemade cookies, cowboy candy, and island vibes 🌴🍪🔥</p>
+    <p class="tagline">Serving sunshine and sugar — one snack at a time</p>
+  </header>
+
+  <footer>
+    &copy; 2025 CDawgs Snack Shack. All rights reserved.
+  </footer>
+
 </body>
 </html>
-

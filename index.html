@@ -253,22 +253,9 @@
       position: relative;
       overflow: hidden;
     }
-
-  .cookie-card::before {
-  content: "Small Batch";
-  display: inline-block;
-  align-self: center;
-  background: #f7f3e8;
-  color: #155d6f;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
-  font-weight: 900;
-  padding: 5px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(21, 93, 111, 0.12);
-  margin-bottom: 10px;
-}
+    .cookie-card::before {
+      display: none;
+      }
 
     .cookie-card:hover {
       transform: translateY(-8px);
@@ -298,13 +285,17 @@
       color: #155d6f;
     }
 
-    .product-note {
-      margin-top: 8px;
-      font-size: 0.82rem;
+     .product-note {
+      margin-top: 10px;
+      font-size: 0.78rem;
       color: #d85c4a;
       font-weight: 800;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
+    }
+
+    .product-note::after {
+      content: "  →";
     }
 
     .story-section {

@@ -53,23 +53,26 @@
       pointer-events: none;
     }
 
-    header {
+header {
   width: 100%;
   background: rgba(247, 243, 232, 0.9);
   backdrop-filter: blur(10px);
-  padding: 14px 0;
+  padding: 14px 34px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(21, 93, 111, 0.12);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
 
+.header-inner {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0 0 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
   .header-logo {
@@ -432,7 +435,8 @@
 </head>
 
 <body>
-  <header>
+<header>
+  <div class="header-inner">
     <a href="/">
       <img src="cdsnackshacklogo2.png" alt="C-Dawg's Snack Shack logo" class="header-logo" />
     </a>
@@ -443,7 +447,8 @@
       <a class="shop-link" href="https://cdawgssnackshack.square.site/s/order#DBFJYTZNCX2QHYAKYFGKMAHJ" target="_blank">Shop</a>
       <a href="https://www.etsy.com/shop/CDawgsSnackShack" target="_blank">Etsy</a>
     </div>
-  </header>
+  </div>
+</header>
 
   <img src="PalmSilhouttes.png" alt="Palm left" class="palms-left" />
   <img src="PalmSilhouttes.png" alt="Palm right" class="palms-right" />

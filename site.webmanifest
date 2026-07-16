@@ -1,0 +1,11 @@
+{
+  "name": "C-Dawg's Snack Shack",
+  "short_name": "Snack Shack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3e8",
+  "theme_color": "#f7f3e8",
+  "icons": [
+    {"src": "/favicon.png", "sizes": "1024x1024", "type": "image/png"}
+  ]
+}
